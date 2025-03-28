@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75706715-7C58-4903-922C-57D14B65F8ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WF_QuanNet</RootNamespace>
+    <AssemblyName>WF_QuanNet</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\resources\Login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\resources\Login_form.Designer.cs">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\resources\Login_form.resx">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\resources\6ma Cyber %282%29 e.png" />
+    <Content Include="Properties\resources\add.png" />
+    <Content Include="Properties\resources\bibimbap.png" />
+    <Content Include="Properties\resources\bill.png" />
+    <Content Include="Properties\resources\close %281%29.png" />
+    <Content Include="Properties\resources\combinhdan.jpg" />
+    <Content Include="Properties\resources\comga.jpg" />
+    <Content Include="Properties\resources\comrang.jpg" />
+    <Content Include="Properties\resources\comtron.jpg" />
+    <Content Include="Properties\resources\delete.png" />
+    <Content Include="Properties\resources\desktop.png" />
+    <Content Include="Properties\resources\dish.png" />
+    <Content Include="Properties\resources\iconizer-bug %281%29.png" />
+    <Content Include="Properties\resources\iconizer-devices %281%29 %281%29 %281%29.png" />
+    <Content Include="Properties\resources\iconizer-devices %281%29.png" />
+    <Content Include="Properties\resources\iconizer-drumstick %281%29.png" />
+    <Content Include="Properties\resources\iconizer-exit %281%29 %281%29.png" />
+    <Content Include="Properties\resources\iconizer-file-invoice-dollar %281%29.png" />
+    <Content Include="Properties\resources\images.jpg" />
+    <Content Include="Properties\resources\info %281%29.png" />
+    <Content Include="Properties\resources\info %282%29.png" />
+    <Content Include="Properties\resources\invoice.png" />
+    <Content Include="Properties\resources\key %281%29.png" />
+    <Content Include="Properties\resources\logout.png" />
+    <Content Include="Properties\resources\mitom.jpg" />
+    <Content Include="Properties\resources\mixao.jpg" />
+    <Content Include="Properties\resources\pen.png" />
+    <Content Include="Properties\resources\phobo.jpg" />
+    <Content Include="Properties\resources\Screenshot 2024-05-24 223145.png" />
+    <Content Include="Properties\resources\settings.png" />
+    <Content Include="Properties\resources\shopping_cart.png" />
+    <Content Include="Properties\resources\user %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WFQuanLyNhanVien\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{c9309e49-758e-4260-b401-b3f43f680dff}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
