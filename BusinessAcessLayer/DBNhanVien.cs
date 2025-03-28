@@ -12,7 +12,7 @@ namespace BusinessAcessLayer
     {
         public DataSet LayDsNhanVien()
         {
-            return DAL.ExecuteQueryDataSet("select * from DanhSachNhanVien", CommandType.Text, null);
+            return DAL.ExecuteQueryDataSet("select * from NHANVIEN", CommandType.Text, null);
         }
     }
 }

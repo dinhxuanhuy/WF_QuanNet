@@ -37,6 +37,7 @@ namespace WF_QuanNet
             label3.Visible = true;
             if (realadmin)
             {
+                new frmNhanVien().Show();
 
 
             }
