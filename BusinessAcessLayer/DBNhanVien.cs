@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace BusinessAcessLayer
 {
-    public class DBNhanVien
+    public static class DBNhanVien
     {
         public static DataSet LayDsNhanVien()
         {
